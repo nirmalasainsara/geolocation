@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+
+var/
+
+# migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+
+# Local settings
+local.py
+
+
+
+# uploaded files
+media/*
+
+# static_root
+static_root/*
+
+db.sqlite3
+
+# virtual enviourment
+venv*

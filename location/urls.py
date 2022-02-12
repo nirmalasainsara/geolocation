@@ -3,5 +3,5 @@ from location.views import GeoLocationApiView
 
 
 urlpatterns = [
-    re_path(r'^getAddressDetails$', GeoLocationApiView.as_view(), name='/getAddressDetails'),
+    re_path(r'^getAddressDetails$', GeoLocationApiView.as_view(), name='getAddressDetails'),
 ]

@@ -1,4 +1,5 @@
 import requests
+import os
 from rest_framework.response import Response
 from rest_framework.views import APIView
 # Create your views here.
@@ -16,7 +17,7 @@ class GeoLocationApiView(APIView):
     
     def post(self, request, *args, **kwargs):
         url = 'https://maps.googleapis.com/maps/api/geocode/json'
-        token = settings.token
+        token = os.environ.get('token')
         address = self.request.GET
         
         data = requests.post(f'{url}?address={address}&key={token}')
